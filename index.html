@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <script src="main.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(83, 107, 211);
+        }
+
+        .container{
+            background-color: rgb(255, 255, 255);
+            font-size: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 40vh;
+            text-align: center;
+        }
+
+        button{
+            padding: 10px;
+            margin: 10px;
+            width: 240px;
+            background-color: rgb(15, 27, 102);
+            color: rgb(239, 229, 229);
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 10px;
+            margin-top: 20px;
+
+        }
+
+        #jokeContainer{
+            background-color: rgb(214, 214, 214);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .loading{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Joke Generator 🤣</h1>
+        <button onclick="getjoke()">Get Joke✨</button>
+        <div class="loading" id="loading">Loading...</div>
+        <div id="jokeContainer"></div>
+    </div>
+</body>
+</html>
